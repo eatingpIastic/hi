@@ -53,7 +53,7 @@
       text-align: center;
     }
 
-    /* Checkbox for expanding */
+    /* Checkbox for expanding (for other games) */
     input[type="checkbox"] {
       display: none;
     }
@@ -80,6 +80,12 @@
       border-radius: 8px;
     }
 
+    /* Make link cards look like others */
+    a.game-link {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -87,19 +93,15 @@
 
   <div class="game-list">
 
-    <!-- Game 1 -->
-    <div class="game">
-      <input type="checkbox" id="game1">
-      <label for="game1">
-        <img src="http://eatingpiastic.github.io/drivecrazy" alt="Game 1">
-        <div class="game-title">Drive Mad</div>
-      </label>
-      <div class="expand">
-        <iframe src="http://eatingpiastic.github.io/drivecrazy"></iframe>
+    <!-- Game 1: opens external page -->
+    <a href="http://eatingpiastic.github.io/drivecrazy" target="_blank" class="game-link">
+      <div class="game">
+        <img src="https://via.placeholder.com/400x200.png?text=Drive+Crazy" alt="Drive Crazy">
+        <div class="game-title">Drive Crazy</div>
       </div>
-    </div>
+    </a>
 
-    <!-- Game 2 -->
+    <!-- Game 2: expandable -->
     <div class="game">
       <input type="checkbox" id="game2">
       <label for="game2">
@@ -111,7 +113,7 @@
       </div>
     </div>
 
-    <!-- Game 3 -->
+    <!-- Game 3: expandable -->
     <div class="game">
       <input type="checkbox" id="game3">
       <label for="game3">
